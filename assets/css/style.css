@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Futura', 'Century Gothic', 'Emona SemiBold';
+}
+
+:root {
+    --archblue: #1f3354;
+    --archgold: #f7af1b;
+    --archorange: #ff671d;
+    --archgray: #dbdbdb;
+}
+
+.arch-text {
+    font-family: 'Futura';
+}
