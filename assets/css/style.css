@@ -19,10 +19,10 @@ a:hover {
     color: white
 }
 
-a:focus {
+/* a:focus {
     text-decoration: none;
     color: yellow;
-}
+} */
 
 a:active {
     text-decoration: none;
@@ -183,7 +183,7 @@ p {
 }
 
 #test-banner:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: .3s ease-in-out;
 }
 
