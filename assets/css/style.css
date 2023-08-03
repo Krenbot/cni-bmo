@@ -12,6 +12,94 @@
     --archgray: #dbdbdb;
 }
 
-.arch-text {
-    font-family: 'Futura';
+.header {
+    height: 110px;
+    background-color: white;
+    background-size: auto 100%;
+}
+
+.header img {
+    height: 100%
+}
+
+.hero {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/van.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.hero p {
+    /* border-radius: 0 12rem 12rem 0; */
+    width: 25%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 40px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro {
+    padding: 50px 100px 50px 100px;
+    border-bottom: solid black 2px;
+}
+
+.intro h1,
+p {
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+}
+
+.benefits {
+    padding: 0, 50px;
+    border: solid black 1px;
+    width: 50%;
+}
+
+.benefits h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.benefit-li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.benefit-ul {
+    align-items: stretch;
+}
+
+.benefits img {
+    height: 60px;
+    justify-content: flex-start;
+}
+
+.benefits p {
+    font-size: 1em;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.purposes {
+    padding: 50px;
+    border: solid black 1px;
+    width: 50%;
 }
