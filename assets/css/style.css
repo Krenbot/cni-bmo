@@ -120,3 +120,67 @@ p {
 .purposes li {
     padding-top: 20px;
 }
+
+.quote-request {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/van.jpg");
+    background-repeat: no-repeat;
+    margin-top: 5px white;
+}
+
+.quote-request-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.quote-request-content p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.quote-request-content button {
+    background-color: transparent;
+    color: white;
+    border: solid var(--archorange) 4px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quote-request-content button:hover {
+    background-color: #ff671d;
+    transition: 0.3s;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white
+}
+
+a:hover {
+    text-decoration: none;
+    color: white
+}
+
+a:focus {
+    text-decoration: none;
+    color: yellow;
+}
+
+a:active {
+    text-decoration: none;
+    color: white
+}
