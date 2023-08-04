@@ -294,3 +294,22 @@ p {
 }
 
 /*  */
+
+.footer {
+    display: flex;
+    background-color: #1f3354;
+}
+
+.footer-logo {
+    height: 100%
+}
+
+.offices {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.terms {
+    color: white;
+}
