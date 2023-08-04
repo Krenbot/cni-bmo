@@ -19,11 +19,6 @@ a:hover {
     color: white
 }
 
-/* a:focus {
-    text-decoration: none;
-    color: yellow;
-} */
-
 a:active {
     text-decoration: none;
     color: white
@@ -36,26 +31,100 @@ a:active {
     --archgray: #dbdbdb;
 }
 
-.header {
-    height: 110px;
-    background-color: white;
-    background-size: auto 100%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-weight: bolder;
+    font-family: 'Futura';
 }
 
-.header img {
-    height: 100%
+.logo {
+    margin: 0 0 0 .45em;
+    height: 75px;
 }
 
+.logo,
+.navigation {
+    list-style: none;
+}
+
+.logo a,
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1em;
+    color: var(--archblue)
+}
+
+.navigation a:hover {
+    color: var(--archorange);
+    transition: .2s ease-in-out;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+    .logo {
+        margin: .25em 0;
+        align-self: left;
+        /* align the logo to the left side of 'flex-container' */
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+/*  */
 .hero {
     display: flex;
     height: 450px;
     width: 100%;
-    margin-bottom: 25px;
     background-size: cover;
     background-position: center;
     background-image: url("../images/cniSky.JPG");
     background-repeat: no-repeat;
 }
+
 
 .hero p {
     width: 15%;
@@ -84,10 +153,11 @@ p {
 
 .content {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .benefits {
-    padding: 0, 50px;
     border: solid black 1px;
     width: 50%;
 }
@@ -222,3 +292,5 @@ p {
     background-color: #ff671d;
     transition: 0.3s;
 }
+
+/*  */
