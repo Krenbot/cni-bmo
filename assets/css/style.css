@@ -139,7 +139,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .hero p {
     width: 15%;
     color: white;
@@ -255,7 +254,8 @@ p {
     height: auto;
 }
 
-#test-banner {
+/* BANNER SANDBOX */
+#test-banner1 {
     display: flex;
     height: 200px;
     width: 100%;
@@ -269,11 +269,32 @@ p {
     transition: .3s ease-in-out;
 }
 
-#test-banner:hover {
+#test-banner1:hover {
     transform: scale(1.2);
     transition: .3s ease-in-out;
 }
 
+#test-banner2 {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    background-position: center;
+    background-image: url("../images/van.jpg");
+    background-repeat: no-repeat;
+    margin-top: 5px white;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+#test-banner2:hover :first-child {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+/*  */
 .quote-request-content {
     display: flex;
     justify-content: space-evenly;
@@ -313,17 +334,18 @@ p {
 .footer {
     background-color: var(--archblue);
     color: var(--archgray);
-    font-family: 'Futura';
     line-height: 1.5;
+
+}
+
+.footer img {
+    height: 150px;
+    width: auto;
 }
 
 .footer a {
     text-decoration: none;
     color: #eee;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .ft-title {
@@ -332,7 +354,6 @@ a:hover {
 }
 
 .ft-main {
-    padding: 1.25rem 1.875rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -354,8 +375,18 @@ a:hover {
     }
 }
 
+.line {
+    background-color: white;
+    width: 53px;
+    height: 1px;
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .ft-legal {
-    background-color: var(--archblue)
+    /* background-color: var(--archblue) */
 }
 
 .ft-legal-list {
@@ -372,14 +403,4 @@ a:hover {
 .ft-legal-list li {
     margin: 0.125rem 0.625rem;
     white-space: nowrap;
-}
-
-.line {
-    background-color: white;
-    width: 53px;
-    height: 1px;
-    display: flex;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
