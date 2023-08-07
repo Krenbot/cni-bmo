@@ -307,8 +307,6 @@ p {
     transition: 0.3s;
 }
 
-
-
 footer {
     background-color: var(--archblue);
     color: var(--archgray);
@@ -341,19 +339,13 @@ a:hover {
     min-width: 12.5rem;
 }
 
-@media only screen and (min-width: 29.8125rem
-
-    /*477px*/
-) {
+@media only screen and (min-width: 29.8125rem) {
     .ft-main {
         justify-content: space-around;
     }
 }
 
-@media only screen and (min-width: 77.5rem
-
-    /*1240px*/
-) {
+@media only screen and (min-width: 77.5rem) {
     .ft-main {
         justify-content: space-evenly;
     }
