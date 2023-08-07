@@ -40,7 +40,7 @@ ul {
     padding-left: 0;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -331,19 +331,19 @@ p {
     transition: 0.3s;
 }
 
-.footer {
+footer {
     background-color: var(--archblue);
     color: var(--archgray);
     line-height: 1.5;
 
 }
 
-.footer img {
+footer img {
     height: 150px;
     width: auto;
 }
 
-.footer a {
+footer a {
     text-decoration: none;
     color: #eee;
 }
