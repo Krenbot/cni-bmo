@@ -6,23 +6,26 @@
 }
 
 a {
-    text-decoration: none;
     color: inherit;
 }
 
 a:visited {
-    text-decoration: none;
     color: white
 }
 
 a:hover {
-    text-decoration: none;
     color: white
 }
 
 a:active {
-    text-decoration: none;
     color: white
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 :root {
@@ -71,15 +74,15 @@ ul {
 .navigation a {
     display: block;
     padding: 1em;
-    color: var(--archblue)
+    color: var(--archblue);
 }
 
 .navigation a:hover {
     color: var(--archorange);
     transition: .2s ease-in-out;
+    text-decoration: none
 }
 
-/* *********** media queries *********** */
 @media all and (max-width: 990px) {
     .flex-container {
         flex-direction: column;
@@ -307,14 +310,14 @@ p {
     transition: 0.3s;
 }
 
-footer {
+.footer {
     background-color: var(--archblue);
     color: var(--archgray);
     font-family: 'Futura';
     line-height: 1.5;
 }
 
-footer a {
+.footer a {
     text-decoration: none;
     color: #eee;
 }
