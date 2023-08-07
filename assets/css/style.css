@@ -140,7 +140,8 @@ body {
 }
 
 .hero p {
-    width: 15%;
+    background-size: cover;
+    width: 35%;
     color: white;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
@@ -154,8 +155,10 @@ body {
     flex-wrap: wrap;
 }
 
+
 .intro {
     padding: 50px 100px 50px 100px;
+    /* 50px 20px 50px 20px */
     border-bottom: solid black 2px;
 }
 
@@ -171,7 +174,7 @@ p {
 }
 
 .benefits {
-    border: solid black 1px;
+    /* border: solid black 1px; */
     width: 50%;
 }
 
@@ -203,8 +206,6 @@ p {
 }
 
 .purposes {
-    padding: 0, 50px;
-    border: solid black 1px;
     width: 50%;
 }
 
@@ -221,7 +222,9 @@ p {
     margin: 0;
     justify-content: center;
     width: 100%;
+    padding-top: 0px;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .purposes li {
