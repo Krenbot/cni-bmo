@@ -5,60 +5,6 @@
     font-family: 'Futura', 'Century Gothic', 'Emona SemiBold';
 }
 
-/* TABLET */
-@media all and (max-width: 990px) {
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .logo {
-        margin: 0;
-    }
-
-    .navigation {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .ft-main {
-        justify-content: space-around;
-    }
-}
-
-/* MOBILE */
-@media all and (max-width: 600px) {
-
-    .nav-container{position: relative;
-    }
-
-    .logo {
-        margin: .25em 0;
-        align-self: left;
-    } 
-
-    .content{
-        padding: 0px;
-    }
-
-    .navigation {
-        flex-direction: column;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-
-    .ft-main {
-        justify-content: space-evenly;
-    }
-}
 
 a {
     color: inherit;
@@ -413,4 +359,59 @@ footer a {
 .ft-legal-list li {
     margin: 0.125rem 0.625rem;
     white-space: nowrap;
+}
+
+/* TABLET */
+@media all and (max-width: 990px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+
+/* MOBILE */
+@media all and (max-width: 600px) {
+
+    .nav-container{position: relative;
+    }
+
+    .logo {
+        margin: .25em 0;
+        align-self: left;
+    } 
+
+    .content{
+        padding: 0px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .ft-main {
+        justify-content: space-evenly;
+    }
 }
