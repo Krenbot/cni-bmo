@@ -27,9 +27,17 @@
 
 /* MOBILE */
 @media all and (max-width: 600px) {
+
+    .nav-container{position: relative;
+    }
+
     .logo {
         margin: .25em 0;
         align-self: left;
+    } 
+
+    .content{
+        padding: 0px;
     }
 
     .navigation {
@@ -87,7 +95,9 @@ ul {
     padding-left: 0;
 }
 
-nav {
+.nav-container {
+    height: fit-content;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,6 +157,7 @@ body {
 }
 
 .hero p {
+    font-weight: bold;
     background-size: cover;
     width: 35%;
     color: white;
@@ -230,6 +241,7 @@ p {
     padding-top: 0px;
     padding-left: 20px;
     padding-bottom: 20px;
+    padding-right: 20px
 }
 
 .purposes li {
