@@ -103,15 +103,14 @@ body {
     flex-wrap: wrap;
 }
 
-
 .intro {
     padding: 50px 100px 50px 100px;
-    border-bottom: solid black 2px;
 }
 
 .intro h1,
 p {
     font-size: 1.5em;
+    line-height: 2;
 }
 
 .content {
@@ -130,13 +129,16 @@ p {
 
 .body-content h2{
     color: #ff671d;
-    border-radius: 20px;
     background-color: var(--archblue); 
 }
 
-.benefits {
+.purposes, .benefits{
     width: 50%;
     padding: 20px;
+    font-weight: bold;
+}
+
+.benefits {
     flex-direction: column;
     align-items: center;
 }
@@ -148,8 +150,12 @@ p {
     text-align: center;
 }
 
+.benefit-li, .purposes-li{
+    font-size: large;
+}
+
 .benefit-li {
-    padding-top: 5px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -170,11 +176,6 @@ p {
     padding-left: 20px;
 }
 
-.purposes {
-    width: 50%;
-    padding: 10px;
-}
-
 .purposes h2 {
     display: flex;
     justify-content: center;
@@ -189,11 +190,11 @@ p {
     margin: 0;
     justify-content: center;
     width: 100%;
-    padding: 0px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
 }
 
 .purposes li {
-    padding-top: 10px;
+    padding: 20px 0 0 10px;
 }
 
 .quote-request {
@@ -221,73 +222,6 @@ p {
 .banners {
     height: auto;
 }
-
-/* BANNER SANDBOX */
-#test-banner1 {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background: rgba(0, 0, 0, 0.6);
-    background-size: 100%;
-    background-position: center;
-    background-image: url("../images/van.jpg");
-    background-repeat: no-repeat;
-    margin-top: 5px white;
-    transition: .3s ease-in-out;
-    overflow-x: hidden;
-}
-
-#test-banner1:hover {
-    transform: scale(1.2);
-    transition: .3s ease-in-out;
-}
-
-#test-banner2 {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background: rgba(0, 0, 0, 0.6);
-    background-size: 100%;
-    background-position: center;
-    background-image: url("../images/van.jpg");
-    background-repeat: no-repeat;
-    margin-top: 5px white;
-    transition: .3s ease-in-out;
-    overflow: hidden;
-}
-
-#test-banner2:hover :first-child {
-    transform: scale(1.1);
-    transition: .3s ease-in-out;
-}
-
-#test-banner3 {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background: rgba(0, 0, 0, 0.6);
-    background-size: 100%;
-    background-position: center;
-    background-image: url("../images/van.jpg");
-    background-repeat: no-repeat;
-    margin-top: 5px white;
-    transition: .3s ease-in-out;
-    overflow: hidden;
-}
-
-#test-banner3:hover,
-#test-banner3:hover:first-child {
-    background-size: 150%;
-    transform: scale(1.1);
-    transition: .3s ease-in-out;
-    overflow: hidden;
-}
-
-
-/* BANNER SANDBOX END */
 
 .quote-request-content {
     display: flex;
@@ -403,6 +337,12 @@ footer a {
         justify-content: space-around;
     }
 
+    .benefit-ul {
+        padding-top: 10px;
+        align-items: stretch;
+    }
+
+
     .ft-main {
         justify-content: space-around;
     }
@@ -418,18 +358,20 @@ footer a {
         align-self: left;
     } 
 
-.benefits{
-    width: 100%;
-}
+    .benefits, .purposes{
+        width: 100%;
+        padding: 10px 10px 0 10px;
+    }
 
-.purposes{
-    width: 100%
-}
+    .benefit-ul{
+        display: flex;
+        flex-direction: column;
+    }
 
-.benefit-ul{
-    display: flex;
-    flex-direction: column;
-}
+    .purposes-ul{
+        padding: 10px;
+        vertical-align: middle;
+    }
 
     .purposes h2, 
     .benefits h2{
