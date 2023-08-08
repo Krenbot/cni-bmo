@@ -12,6 +12,10 @@
     --archgray: #dbdbdb;
 }
 
+.content strong{
+    color:var(--archorange)
+}
+
 a,
 a:visited,
 a:hover,
@@ -22,7 +26,6 @@ a:active {
 
 ul {
     list-style: none;
-    padding-left: 0;
 }
 
 .nav-container {
@@ -190,11 +193,12 @@ p {
     margin: 0;
     justify-content: center;
     width: 100%;
-    padding: 20px 10px 10px 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .purposes li {
     padding: 20px 0 0 10px;
+    font-size: 1.2em;
 }
 
 .quote-request {
