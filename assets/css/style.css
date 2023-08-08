@@ -5,6 +5,53 @@
     font-family: 'Futura', 'Century Gothic', 'Emona SemiBold';
 }
 
+/* TABLET */
+@media all and (max-width: 990px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+
+/* MOBILE */
+@media all and (max-width: 600px) {
+    .logo {
+        margin: .25em 0;
+        align-self: left;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
 a {
     color: inherit;
 }
@@ -83,46 +130,6 @@ nav {
     text-decoration: none
 }
 
-@media all and (max-width: 990px) {
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .logo {
-        margin: 0;
-    }
-
-    .navigation {
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
-
-/* ****** ****** */
-@media all and (max-width: 600px) {
-    .logo {
-        margin: .25em 0;
-        align-self: left;
-    }
-
-    .navigation {
-        flex-direction: column;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-}
-
-/*  */
 body {
     display: flex;
     min-height: 100vh;
@@ -158,7 +165,6 @@ body {
 
 .intro {
     padding: 50px 100px 50px 100px;
-    /* 50px 20px 50px 20px */
     border-bottom: solid black 2px;
 }
 
@@ -174,7 +180,6 @@ p {
 }
 
 .benefits {
-    /* border: solid black 1px; */
     width: 50%;
 }
 
@@ -297,7 +302,8 @@ p {
     transition: .3s ease-in-out;
 }
 
-/*  */
+/* BANNER SANDBOX END */
+
 .quote-request-content {
     display: flex;
     justify-content: space-evenly;
@@ -348,7 +354,7 @@ footer img {
 
 footer a {
     text-decoration: none;
-    color: #eee;
+    color: #ffffff;
 }
 
 .ft-title {
@@ -359,23 +365,12 @@ footer a {
 .ft-main {
     display: flex;
     flex-wrap: wrap;
+        justify-content: space-evenly;
 }
 
 .ft-main-item {
     padding: 1.25rem;
     min-width: 12.5rem;
-}
-
-@media only screen and (min-width: 29.8125rem) {
-    .ft-main {
-        justify-content: space-around;
-    }
-}
-
-@media only screen and (min-width: 77.5rem) {
-    .ft-main {
-        justify-content: space-evenly;
-    }
 }
 
 .line {
