@@ -20,6 +20,7 @@ a,
 a:visited,
 a:hover,
 a:active {
+    font-size: large;
     text-decoration: none;
     color: var(--archblue);
 }
@@ -47,24 +48,13 @@ ul {
     height: 75px;
 }
 
-.logo,
-.navigation {
+.logo
+{
     list-style: none;
 }
 
-.logo a,
-.navigation a {
+.logo a{
     text-decoration: none;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
-    padding: 1em;
-    color: var(--archblue);
 }
 
 .top-nav a:hover {
@@ -81,7 +71,7 @@ body {
 
 .hero {
     display: flex;
-    /* height: 450px; */
+    height: 450px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -354,12 +344,6 @@ footer a {
 
 /* MOBILE */
 @media all and (max-width: 600px) {
-    .nav-container{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
-
     .hero p{
         width: 492px;
         padding: 0 20px 0 20px;
@@ -414,20 +398,6 @@ footer a {
         padding-left: 30px;
     }
 
-    .navigation {
-        flex-direction: column;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-
     .ft-container{
         line-height: 1.25;
     }
@@ -452,6 +422,7 @@ footer a {
     .ft-legal-list{
         padding: 20px 0 20px 0;
     }
+}
 
 .top-nav {
 height: fit-content;
@@ -529,12 +500,13 @@ padding-right: 1em;
 }
 
   
-@media (max-width: 700px) {
+@media (max-width: 700px) 
+{
   .menu-button-container {
     display: flex;
   }
 
-  a,
+a,
 a:visited,
 a:hover,
 a:active {
@@ -543,7 +515,7 @@ a:active {
 }
 
   .menu {
-    margin-top: 90px;
+    margin-top: 84px;
     position: absolute;
     top: 0;
     flex-direction: column;
@@ -560,11 +532,13 @@ a:active {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     
   }
+
   #menu-toggle:checked ~ .menu li {
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
   .menu > li {
     display: flex;
     justify-content: center;
@@ -574,3 +548,4 @@ a:active {
     color: white;
     background-color: white;
   }
+}
