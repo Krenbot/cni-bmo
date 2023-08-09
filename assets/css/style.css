@@ -81,7 +81,7 @@ body {
 
 .hero {
     display: flex;
-    height: 450px;
+    /* height: 450px; */
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -89,7 +89,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero p {
+.hero > p {
     font-weight: bold;
     background-size: cover;
     width: 35%;
@@ -361,7 +361,6 @@ footer a {
     }
 
     .hero p{
-        height: 450px;
         width: 492px;
         padding: 0 20px 0 20px;
     }
