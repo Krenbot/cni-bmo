@@ -480,9 +480,13 @@ footer a {
     }
 
     .ft-main-item{
-        justify-content: center;
         padding: 10px;
         min-width: 0px;
+        text-align: center;
+    }
+
+    .ft-main-item a{
+        font-size: medium;
     }
 
     .ft-legal-list{
