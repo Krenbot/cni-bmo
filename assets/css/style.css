@@ -60,7 +60,6 @@ ul {
 .top-nav a:hover {
     color: var(--archorange);
     transition: .2s ease-in-out;
-    text-decoration: none
 }
 
 body {
@@ -296,8 +295,8 @@ footer a {
     margin-right: auto;
 }
 
-.ft-legal {
-    /* background-color: var(--archblue) */
+.ft-legal a:hover {
+    color: white;
 }
 
 .ft-legal-list {
@@ -348,12 +347,6 @@ footer a {
         width: 492px;
         padding: 0 20px 0 20px;
     }
-
-    .logo {
-        /* margin: .25em 0;
-        width: 50%;
-        align-self: left; */
-    } 
 
     .hero p{
         height: 450px;
@@ -421,7 +414,7 @@ footer a {
 
     .ft-legal-list{
         padding: 20px 0 20px 0;
-    }
+    } 
 }
 
 .top-nav {
@@ -530,7 +523,6 @@ a:active {
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    
   }
 
   #menu-toggle:checked ~ .menu li {
