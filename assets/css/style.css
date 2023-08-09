@@ -363,6 +363,7 @@ footer a {
     .hero p{
         height: 450px;
         width: 492px;
+        padding: 0 20px 0 20px;
     }
 
     .logo {
@@ -434,11 +435,16 @@ footer a {
 
     .ft-main {
         justify-content: space-evenly;
+        padding-bottom: 20px;
     }
 
     .ft-main-item{
         justify-content: center;
         padding: 10px;
         min-width: 0px;
+    }
+
+    .ft-legal-list{
+        padding: 20px 0 20px 0;
     }
 }
