@@ -362,6 +362,12 @@ footer a {
         align-self: left;
     } 
 
+    .hero p{
+        height: 450px;
+        width: 492px;
+        padding: 0 20px 0 20px;
+    }
+
     .benefits, .purposes{
         width: 100%;
         padding: 10px 10px 0 10px;
@@ -422,12 +428,17 @@ footer a {
 
     .ft-main {
         justify-content: space-evenly;
+        padding-bottom: 20px;
     }
 
     .ft-main-item{
         justify-content: center;
         padding: 10px;
         min-width: 0px;
+    }
+
+    .ft-legal-list{
+        padding: 20px 0 20px 0;
     }
 }
 
