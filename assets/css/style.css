@@ -354,12 +354,21 @@ footer a {
 
 /* MOBILE */
 @media all and (max-width: 600px) {
-    .nav-container{position: relative;
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .hero p{
+        height: 450px;
+        width: 492px;
     }
 
     .logo {
         margin: .25em 0;
-        align-self: left;
+        width: 50%;
+        /* align-self: left; */
     } 
 
     .benefits, .purposes{
@@ -403,7 +412,6 @@ footer a {
         text-align: center;
         padding: 10px;
         border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .navigation li:last-of-type a {
