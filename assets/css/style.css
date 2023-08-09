@@ -12,7 +12,7 @@
     --archgray: #dbdbdb;
 }
 
-.content strong{
+strong{
     color:var(--archorange)
 }
 
@@ -366,9 +366,9 @@ footer a {
     }
 
     .logo {
-        margin: .25em 0;
+        /* margin: .25em 0;
         width: 50%;
-        /* align-self: left; */
+        align-self: left; */
     } 
 
     .benefits, .purposes{
@@ -402,6 +402,10 @@ footer a {
 
     .content{
         padding: 0px;
+    }
+
+    .quote-request-content p {
+        padding-left: 30px;
     }
 
     .navigation {
