@@ -91,15 +91,14 @@ body {
 
 .hero p {
     font-weight: bold;
-    font-size: 40px;
     background-size: cover;
     width: 35%;
     color: white;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
-    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
+    font-size: 40px;
 }
 
 .content {
@@ -112,7 +111,7 @@ body {
 }
 
 .intro h1,
-.intro p {
+p {
     font-size: 1.5em;
     line-height: 2;
 }
@@ -355,26 +354,13 @@ footer a {
 
 /* MOBILE */
 @media all and (max-width: 600px) {
-    .nav-container{
-
+    .nav-container{position: relative;
     }
 
     .logo {
         margin: .25em 0;
         align-self: left;
     } 
-
-    .navigation {
-
-    }
-
-    .navigation a {
-
-    }
-
-    .navigation li:last-of-type a {
-
-    }
 
     .benefits, .purposes{
         width: 100%;
@@ -407,6 +393,21 @@ footer a {
 
     .content{
         padding: 0px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
     }
 
     .ft-container{
