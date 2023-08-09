@@ -314,13 +314,14 @@ footer a {
     margin-right: auto;
 }
 
-.ft-legal a:hover {
+.ft-legal-list a{
     color: white;
 }
 
 .ft-legal-list {
     color: white;
     padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
