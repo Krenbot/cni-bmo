@@ -99,6 +99,7 @@ body {
 }
 
 .hero > p {
+    padding-left: 50px;
     font-weight: bold;
     background-size: cover;
     width: 35%;
