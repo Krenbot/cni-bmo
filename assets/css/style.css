@@ -127,6 +127,9 @@ p {
 }
 
 .content {
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -423,6 +426,10 @@ footer a {
         height: 450px;
         width: 492px;
         padding: 0 20px 0 20px;
+    }
+
+    .content{
+        width: 100%
     }
 
     .benefits, .purposes{
